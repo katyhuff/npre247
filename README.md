@@ -1,10 +1,10 @@
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
-# NPRE NNN : Title
+# NPRE 247 : Modeling Nuclear Energy Systems
 
 This is the repository that holds ipython notebooks, python scripts, a 
-syllabus, and other materials for Katy Huff's NPRENNN course at UIUC. 
+syllabus, and other materials for Katy Huff's NPRE247 course at UIUC. 
 
 ## Syllabus
 
@@ -34,18 +34,17 @@ found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 program if you are on windows and execute the command:
 
 ```
-git clone https://github.com/katyhuff/npreNNN.git
+git clone https://github.com/katyhuff/npre247.git
 ```
 
 **If you have not installed git,** you can download the notebooks as a zip file
-from [here](https://github.com/katyhuff/npreNNN/archive/master.zip). Then,
+from [here](https://github.com/katyhuff/npre247/archive/master.zip). Then,
 unzip the directory. 
 
 
 ### Running the notebooks 
 
-
-You should now have a directory somewhere on your computer called npreNNN. Open
+You should now have a directory somewhere on your computer called npre247. Open
 a terminal (or the git bash for windows program) and type the following command inside that directory:
 
 ```
@@ -64,7 +63,7 @@ notebooks](http://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execu
 
 Periodically, I will make changes to the notebooks and add new ones throughout
 the semester. If you have not installed git, you will need to re-download the
-zip file. If you *have* installed git, navigate to your npreNNN directory and
+zip file. If you *have* installed git, navigate to your npre247 directory and
 type the following:
 
 ```
