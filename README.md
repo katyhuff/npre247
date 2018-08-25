@@ -1,15 +1,29 @@
 
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/katyhuff/npre247)
+
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
-# NPRE 247 : Modeling Nuclear Energy Systems
+# NPRE 412 : Nuclear Power Economics and Fuel Management
 
 This is the repository that holds ipython notebooks, python scripts, a 
-syllabus, and other materials for Katy Huff's NPRE247 course at UIUC. 
+syllabus, and other materials for Katy Huff's NPRE247 course at UofI. 
 
 ## Syllabus
 
 The syllabus will be kept up to date in this repository. It is subject to 
 change, so please keep checking it.
+
+## Running the Notebooks Online
+
+The easiest way to run the notebooks is to let mybinder.org do it for you. Just 
+go to 
+[mybinder.org:/repo/katyhuff/npre247](http://mybinder.org:/repo/katyhuff/npre247). 
+
+If you have trouble, it may be due to the mybinder servers being overloaded. 
+This is a fairly common occurance, because their servers are funded entirely by 
+the research budget of [Dr. Jeremy Freeman.](http://thefreemanlab.com/).
+You can find out the status of mybinder [on their status 
+page](http://mybinder.org/status).
 
 ## Running the Notebooks Locally
 
@@ -43,6 +57,7 @@ unzip the directory.
 
 
 ### Running the notebooks 
+
 
 You should now have a directory somewhere on your computer called npre247. Open
 a terminal (or the git bash for windows program) and type the following command inside that directory:
