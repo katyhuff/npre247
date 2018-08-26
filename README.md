@@ -1,5 +1,6 @@
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org:/repo/katyhuff/npre247)
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/katyhuff/npre247/master)
+
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
