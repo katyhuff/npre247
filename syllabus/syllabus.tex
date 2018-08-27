@@ -10,7 +10,7 @@
 \definecolor{darkred}{rgb}{.7,0,0}
 \definecolor{darkgreen}{rgb}{0,.6,0}
 \definecolor{red}{rgb}{.98,0,0}
-\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\usepackage[colorlinks,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
 %\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \pagestyle{fancyplain}
@@ -40,7 +40,7 @@
 \newcommand{\CourseBuilding}{Talbot Laboratory\xspace}%
 \newcommand{\CourseUniversity}{University of Illinois, Urbana-Champaign\xspace}%
 \newcommand{\TeachingAssistant}{Mohammad Mustafa\xspace}%
-\newcommand{\TAOfficeHourDays}{Wednesdays\xspace}%
+\newcommand{\TAOfficeHourDays}{\xspace}%
 \newcommand{\TAOfficeHourStart}{1:00pm\xspace}%
 \newcommand{\TAOfficeHourEnd}{3:00pm\xspace}%
 \newcommand{\TAOfficeHourPlace}{123 Talbot Laboratory\xspace}
@@ -111,7 +111,11 @@ the details.
 
 \paragraph{Main References:}
 A few essential references for this course will be assigned as readings. The 
-recommended text for this course is \cite{rec_text}.
+required text for this course is \cite{shultis_fundamentals_2016} while 
+\cite{lamarsh_introduction_2017} is also recommended. For assistance in 
+computational projects, \cite{scopatz_effective_2015} is available online and 
+in the library as an ebook.
+
 \bibliographystyle{unsrt}
 \renewcommand{\refname}{\normalfont\selectfont\normalsize}\vspace{-1cm} 
 \bibliography{bibliography}
@@ -261,12 +265,12 @@ subject to change.}}\\
               &  &  &  &  & \textbf{Given} & \textbf{Due} & \textbf{Given} & \textbf{Due}\\ \hline
 \hline
 8/27 & 1 & M  & Intro &  & 1 &  & 1 & \\
-8/29 & 1 & W & Fission/Fusion &  &  &  &  &  \\
+8/29 & 1 & W & Fundamentals & 1 &  &  &  &  \\
 8/31 & 1 & F & Fundamentals & 1 &  &  & 2 & 1 \\
 9/3 & 2 & M & \textbf{Labor Day}  &  & 2 & 1 &  &  \\
 9/5 & 2 & W & Modern Physics  & 2 &  &  &  &  \\
-9/7 & 2 & F & Nuclear Models  & 3 &  &  & 3 & 2 \\
-9/10 & 3 & M & Nuclear Energetics  & 4 & 3 & 2 &  &  \\
+9/7 & 2 & F & Modern Physics & 2 &  &  & 3 & 2 \\
+9/10 & 3 & M & Nuclear Models  & 3 & 3 & 2 &  &  \\
 9/12 & 3 & W & Nuclear Energetics  & 4 &  &  &  &  \\
 9/14 & 3 & F & Nuclear Energetics  & 4 &  &  & 4 & 3 \\
 9/17 & 4 & M & Radioactivity  & 5 & 4 & 3 &  &  \\
@@ -279,9 +283,9 @@ subject to change.}}\\
 10/3 & 6 & W & Binary Nuc. Rxns.  & 6 &  &  &  &  \\
 10/5 & 6 & F & Rad. Int. with Matter  &  &  &  & 7 & 6 \\
 10/8 & 7 & M & Rad. int. with Matter & 7 & 7 & 6 &  &  \\
-10/10 & 7 & W & Ractor Materials  & 10 &  &  &  &  \\
-10/12 & 7 & F & Reactor Materials  & 10 &  &  & 8 & 7 \\
-10/15 & 8 & M & Neutron Balance  & notes &  8 & 7 &  &  \\
+10/10 & 7 & W & Radiation Dosimetry  & 9 &  &  &  &  \\
+10/12 & 7 & F & Radiation Dosimetry  & 9 &  &  & 8 & 7 \\
+10/15 & 8 & M & Radiation Dosimetry  & 9 &  8 & 7 &  &  \\
 10/17 & 8 & W & Neutron Balance  & notes &  &  &  &  \\
 10/19 & 8 & F & Criticality  & notes &  &  & 9 & 8 \\
 10/22 & 9 & M & Criticality  & notes & 9 & 8 &  &  \\
@@ -289,7 +293,7 @@ subject to change.}}\\
 10/26 & 9 & F & 6 Factor  & 10 &  &  & 10 & 9 \\
 10/29 & 10 & M & 6 Factor  & 10 & 10 & 9 &  & \\
 10/31 & 10 & W & Exam 2  &  &  &  &  &  \\
-11/2 & 10 & F & Homo \& Het. Core   &     &    &    &  11  & 10  \\
+11/2 & 10 & F & Reactor Materials   &     &    &    &  11  & 10  \\
 11/5 & 11 & M & Reactivity Feedback & 10  & 11 & 10 &  &  \\
 11/7 & 11 & W & Reactivity Feedback  & 10 &  &  &  &  \\
 11/9 & 11 & F & Reactivity Feedback  & 10 &  &  & 12 & 11 \\
@@ -299,15 +303,15 @@ subject to change.}}\\
 11/19 & 13 & M & \textbf{Fall Break}& & $<13>$ & 12 &  &  \\
 11/21 & 13 & W & \textbf{Fall Break}  &  &  &  &  &  \\
 11/23 & 13 & F & \textbf{Fall Break}  &  &  &  & 14 & $<13>$ \\
-11/26 & 14 & M & Neutron Diffusion& 10&14& $<13>$ &  & \\
+11/26 & 14 & M & Neutron Diffusion& 10 &14& $<13>$ &  & \\
 11/28 & 14 & W & Neutron Diffusion  & 10 &  &  &  &  \\
 11/30 & 14 & F & Neutron Diffusion  & 10  &  &  & 15 & 14 \\
 12/3 & 15 & M & Neutron Diffusion & 10 & 15 & 14 &  &  \\
 12/5 & 15 & W & Neutron Diffusion  &  10 &  &  &  &  \\
 12/7 & 15 & F & Neutron Diffusion  & 10 &  &  &  & 15 \\
-12/10 & 16 & M &  TBD  &  &  & 15 &  &  \\
-12/12 & 16 & W & TBD  &  &  &  &  &  \\
-12/14 & 16 & F & TBD  &  &  &  &  &  \\
+12/10 & 16 & M &  Nuclear Electric Power&  &  & 15 &  &  \\
+12/12 & 16 & W &  Ethics &  &  &  &  &  \\
+12/14 & 16 & F & Review  &  &  &  &  &  \\
 12/17 & 17 & M & \textbf{Final Exam} &   &  &  &  &  \\
 \end{tabular}
 \end{center}
