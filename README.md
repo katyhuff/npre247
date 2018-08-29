@@ -4,7 +4,7 @@
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
-# NPRE 412 : Nuclear Power Economics and Fuel Management
+# NPRE 247: Modeling Nuclear Reactor Systems
 
 This is the repository that holds ipython notebooks, python scripts, a 
 syllabus, and other materials for Katy Huff's NPRE247 course at UofI. 
