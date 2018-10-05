@@ -4,10 +4,25 @@
 
 [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
 
+Note: Two notebooks, regarding finite differences, are borrowed directly from 
+David Kechison (@ketch) who is the author of the repository:
+https://github.com/ketch/finite-difference-course. You can learn more about 
+his numerical methods courses from his scipy paper on the topic:
+
+```latex
+@article{ketcheson2014teaching,
+  title={Teaching numerical methods with IPython notebooks and inquiry-based learning},
+  author={Ketcheson, David I},
+  year={2014},
+  publisher={SciPy. org}
+}
+```
+
 # NPRE 247: Modeling Nuclear Reactor Systems
 
 This is the repository that holds ipython notebooks, python scripts, a 
 syllabus, and other materials for Katy Huff's NPRE247 course at UofI. 
+
 
 ## Syllabus
 
