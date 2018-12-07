@@ -1,0 +1,132 @@
+%        File: arfc-beamer.tex
+%     Created: Sun May 5 10:00 PM 2013 C
+%
+
+
+%\documentclass[11pt,handout]{beamer}
+\documentclass[9pt]{beamer}
+\usetheme[white]{Illinois}
+%\title[short title]{long title}
+\title[Spent Fuel]{International Spent Nuclear Fuel Options}
+
+%\subtitle[short subtitle]{long subtitle}
+\subtitle[ENG 471]{ENG 471 Seminar}
+%\author[short name]{long name}
+\author[K. Huff]{Kathryn Huff\\Advanced Reactors and Fuel Cycles 
+Group\\\url{http://katyhuff.github.io/2017-09-27-ne471.pdf}}
+%\date[short date]{long date}
+\date[09.27.2017]{September 27, 2017}
+%\institution[short name]{long name}
+\institute[UIUC]{University of Illinois at Urbana-Champaign}
+
+%\usepackage{bbding}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs} % nice rules for tables
+\usepackage{microtype} % if using PDF
+\usepackage{bigints}
+\usepackage{minted}
+
+\newcommand{\units}[1] {\:\text{#1}}%
+\newcommand{\SN}{S$_N$}%{S$_\text{N}$}%{$S_N$}%
+\DeclareMathOperator{\erf}{erf}
+%I need some complimentary error funcitons... 
+\DeclareMathOperator{\erfc}{erfc}
+%page numbers
+\setbeamertemplate{footline}[page number]
+\setbeamertemplate{caption}[numbered]
+%Those icons in the references are terrible looking
+\setbeamertemplate{bibliography item}[text]
+
+%%%% Acronym support
+
+\usepackage[acronym,toc]{glossaries}
+\include{acros}
+
+\makeglossaries
+
+%try to get rid of header on title page\dots
+\makeatletter
+    \newenvironment{withoutheadline}{
+        \setbeamertemplate{headline}[default]
+        \def\beamer@entrycode{\vspace*{-\headheight}}
+    }{}
+\makeatother
+
+\usepackage{draftwatermark}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% From uw-beamer Here's a handy bit of code to place at 
+%% the beginning of your presentation (after \begin{document}):
+\newcommand*{\alphabet}{ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}
+\newlength{\highlightheight}
+\newlength{\highlightdepth}
+\newlength{\highlightmargin}
+\setlength{\highlightmargin}{2pt}
+\settoheight{\highlightheight}{\alphabet}
+\settodepth{\highlightdepth}{\alphabet}
+\addtolength{\highlightheight}{\highlightmargin}
+\addtolength{\highlightdepth}{\highlightmargin}
+\addtolength{\highlightheight}{\highlightdepth}
+\newcommand*{\Highlight}{\rlap{\textcolor{HighlightBackground}{\rule[-\highlightdepth]{\linewidth}{\highlightheight}}}}
+\setcounter{tocdepth}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%--------------------------------%%
+\begin{withoutheadline}
+\frame{
+  \titlepage
+}
+\end{withoutheadline}
+
+%%--------------------------------%%
+\AtBeginSection[]{
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+}
+
+\begin{frame}
+  \frametitle{Interactive Slides}
+  {\Large
+  The web-interactive first half of the talk can be found at:\\
+
+  {\color{orange}\url{https://katyhuff.github.io/2017-09-27-eng471}}}
+\end{frame}
+
+\section{Introduction}
+\subsection{Nuclear Nations}
+\input{nations}
+\subsection{Spent Fuel Inventory}
+\input{inventory}
+\section{Spent Fuel Options}
+\include{options}
+\subsection{Long-Term Storage}
+\include{storage}
+\subsection{Reprocessing}
+\include{reprocessing}
+\subsection{Deep Geologic Disposal}
+\include{conceptual}
+\include{concepts_components}
+\include{concepts_layouts}
+\include{concepts_geologies}
+
+%%--------------------------------%%
+%%--------------------------------%%
+\begin{frame}[allowframebreaks]
+  \frametitle{References}
+  \bibliographystyle{plain}
+  {\footnotesize \bibliography{bibliography} }
+
+\end{frame}
+
+%%--------------------------------%%
+
+
+\end{document}
+
+
+

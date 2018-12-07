@@ -1,0 +1,107 @@
+%        File: technology.tex
+%     Created: Sun Mar 31 03:00 PM 2013 C
+% Last Change: Sun Mar 31 03:00 PM 2013 C
+%
+
+
+%\documentclass[11pt,handout]{beamer}
+\documentclass[9pt]{beamer}
+\usetheme[white]{Wisconsin}
+%\title[short title]{long title}
+\title[Geologic Repositories and the Fuel Cycle]{Geologic Repositories and the Fuel Cycle}
+%\subtitle[short subtitle]{long subtitle}
+\subtitle[NPRE412]{NPRE412}
+%\author[short name]{long name}
+\author[Kathryn D. Huff]{Kathryn D. Huff}
+%\date[short date]{long date}
+\date[10.31.2016]{October 31, 2016}
+%\institution[short name]{long name}
+\institute[UIUC]{University of Illinois at Urbana-Champaign}
+
+%\usepackage{bbding}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs} % nice rules for tables
+\usepackage{microtype} % if using PDF
+\usepackage{bigints}
+\newcommand{\units}[1] {\:\text{#1}}%
+\newcommand{\SN}{S$_N$}%{S$_\text{N}$}%{$S_N$}%
+\DeclareMathOperator{\erf}{erf}
+
+%page numbers
+\setbeamertemplate{footline}[page number]
+%Those icons in the references are terrible looking
+\setbeamertemplate{bibliography item}[text]
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% From uw-beamer Here's a handy bit of code to place at 
+%% the beginning of your presentation (after \begin{document}):
+\newcommand*{\alphabet}{ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz}
+\newlength{\highlightheight}
+\newlength{\highlightdepth}
+\newlength{\highlightmargin}
+\setlength{\highlightmargin}{2pt}
+\settoheight{\highlightheight}{\alphabet}
+\settodepth{\highlightdepth}{\alphabet}
+\addtolength{\highlightheight}{\highlightmargin}
+\addtolength{\highlightdepth}{\highlightmargin}
+\addtolength{\highlightheight}{\highlightdepth}
+\newcommand*{\Highlight}{\rlap{\textcolor{HighlightBackground}{\rule[-\highlightdepth]{\linewidth}{\highlightheight}}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%--------------------------------%%
+\frame{
+  \titlepage
+}
+
+\section{Geologic Repository Concepts}
+%%--------------------------------%%
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+
+\subsection{Components}
+\include{concepts_components}
+\subsection{Layouts}
+\include{concepts_layouts}
+\subsection{Geologies}
+\include{concepts_geologies}
+
+
+\section{Geologic Repository Performance}
+\subsection{Metrics}
+\include{performance_metrics}
+\subsection{Thermal Loading}
+\include{performance_thermal}
+\subsection{Radionuclide Transport and Release}
+\include{performance_release}
+
+\section{Fuel Cycle Impacts}
+\subsection{Thermal Contributors}
+\include{fuel_cycle_thermal}
+\subsection{Dose Contributors}
+\include{fuel_cycle_dose}
+\subsection{Other Factors}
+\include{fuel_cycle_other}
+
+\include{conclusion}
+%%--------------------------------%%
+%%--------------------------------%%
+\begin{frame}[allowframebreaks]
+  \frametitle{References}
+  \bibliographystyle{plain}
+  {\footnotesize \bibliography{ne571} }
+
+\end{frame}
+
+%%--------------------------------%%
+
+
+
+
+\end{document}
+
+
+
